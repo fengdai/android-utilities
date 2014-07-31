@@ -11,7 +11,7 @@ import android.util.AttributeSet;
 import android.widget.ImageView;
 
 /**
- * 带有foreground的ImageView
+ * ImageView with foreground.
  */
 public class TouchHighlightImageView extends ImageView {
 
@@ -71,10 +71,20 @@ public class TouchHighlightImageView extends ImageView {
         mCachedBounds.set(0, 0, w, h);
     }
 
+    /**
+     * Returns the drawable used as the foreground of this view.
+     *
+     * @return A Drawable or null if no foreground was set.
+     */
     public Drawable getForeground() {
         return mForeground;
     }
 
+    /**
+     * Supply a Drawable that is to be rendered on top of this view.
+     *
+     * @param drawable The Drawable to be drawn on top of this view.
+     */
     public void setForeground(Drawable drawable) {
         if (mForeground != drawable) {
 
