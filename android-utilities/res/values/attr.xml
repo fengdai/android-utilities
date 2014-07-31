@@ -10,4 +10,9 @@
         <attr name="foreground" format="reference"/>
     </declare-styleable>
 
+    <declare-styleable name="PageIndicator">
+        <attr name="horizontalSpacing" format="reference|dimension"/>
+        <attr name="indicatorSelector" format="reference"/>
+    </declare-styleable>
+
 </resources>
