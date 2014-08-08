@@ -7,7 +7,6 @@ import android.content.res.TypedArray;
 import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.util.AttributeSet;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -78,7 +77,6 @@ public class PageIndicator extends LinearLayout {
     private void setCount(int count) {
         int currentSize = getChildCount();
         if (count > currentSize) {
-            LayoutInflater inflater = LayoutInflater.from(getContext());
             ImageView view = null;
             for (int i = currentSize; i < count; i++) {
                 view = new ImageView(getContext());
