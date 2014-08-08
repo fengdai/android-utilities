@@ -13,26 +13,26 @@ import android.widget.ImageView;
 /**
  * ImageView with foreground.
  */
-public class TouchHighlightImageView extends ImageView {
+public class ForegroundImageView extends ImageView {
 
     private Drawable mForeground;
 
     private Rect mCachedBounds = new Rect();
 
-    public TouchHighlightImageView(Context context) {
+    public ForegroundImageView(Context context) {
         super(context);
     }
 
-    public TouchHighlightImageView(Context context, AttributeSet attrs) {
+    public ForegroundImageView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public TouchHighlightImageView(Context context, AttributeSet attrs, int defStyle) {
+    public ForegroundImageView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         TypedArray a = context
-                .obtainStyledAttributes(attrs, R.styleable.TouchHighlightImageView,
+                .obtainStyledAttributes(attrs, R.styleable.ForegroundImageView,
                         defStyle, 0);
-        Drawable foreground = a.getDrawable(R.styleable.TouchHighlightImageView_foreground);
+        Drawable foreground = a.getDrawable(R.styleable.ForegroundImageView_foreground);
         if (foreground != null) {
             setForeground(foreground);
         }
