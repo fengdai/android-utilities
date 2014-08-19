@@ -7,10 +7,7 @@ import android.util.AttributeSet;
 import android.widget.RelativeLayout;
 
 /**
- * RelativeLayout类型的Item抽象类<BR>
- *
- * @param <D> 绑定数据类型
- * @author daifeng
+ * Abstract RelativeLayout item.
  */
 public abstract class RelativeLayoutListItem<D> extends RelativeLayout implements ListItem<D> {
 
@@ -35,9 +32,7 @@ public abstract class RelativeLayoutListItem<D> extends RelativeLayout implement
     }
 
     /**
-     * 当Item绑定数据时回调给子类<BR>
-     *
-     * @param data 数据
+     * Call when data bound.
      */
     protected abstract void onBindData(D data, int position);
 

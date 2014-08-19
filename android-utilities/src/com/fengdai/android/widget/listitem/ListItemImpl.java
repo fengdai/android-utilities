@@ -5,13 +5,13 @@ import android.os.Message;
 
 public class ListItemImpl<D> implements ListItem<D> {
 
-    // 关联的数据
+    // The model attached by this item.
     private D mData;
 
-    // item在列表中所处position
+    // The position of this item.
     private int mPosition;
 
-    // 处理item消息的Handler
+    // Handler for item messages.
     private Handler mHandler = null;
 
 
