@@ -3,6 +3,7 @@ package com.fengdai.android.widget.listitem;
 import android.os.Handler;
 import android.os.Message;
 
+@Deprecated
 public class ListItemImpl<D> implements ListItem<D> {
 
     // The model attached by this item.

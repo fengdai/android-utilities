@@ -9,6 +9,7 @@ import android.widget.RelativeLayout;
 /**
  * Abstract RelativeLayout item.
  */
+@Deprecated
 public abstract class RelativeLayoutListItem<D> extends RelativeLayout implements ListItem<D> {
 
     private ListItemImpl<D> mImpl = new ListItemImpl<D>();

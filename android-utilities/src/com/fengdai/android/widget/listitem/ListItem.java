@@ -6,6 +6,7 @@ import android.os.Message;
 /**
  * ListItem interface
  */
+@Deprecated
 public interface ListItem<D> {
 
     /**
