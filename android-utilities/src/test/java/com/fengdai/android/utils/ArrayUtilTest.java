@@ -1,6 +1,4 @@
-package com.fengdai.android.tests;
-
-import com.fengdai.android.utils.ArrayUtil;
+package com.fengdai.android.utils;
 
 import junit.framework.TestCase;
 
