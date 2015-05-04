@@ -1,11 +1,18 @@
 package com.fengdai.android.utils;
 
-import junit.framework.TestCase;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import java.util.Arrays;
 
-public class ArrayUtilTest extends TestCase {
+import static junit.framework.Assert.assertNotNull;
+import static junit.framework.Assert.assertTrue;
 
+@RunWith(JUnit4.class)
+public class ArrayUtilTest {
+
+    @Test
     public void testRemoveNull() {
         assertArray(null, null);
         assertArray(new String[]{"A", null, null, "D"}, new String[]{"A", "D"});
