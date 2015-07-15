@@ -15,10 +15,6 @@ public class ArrayUtil {
         if (array == null) {
             return null;
         }
-        Class arrayClazz = array.getClass();
-        if (!arrayClazz.isArray()) {
-            throw new IllegalArgumentException(array.getClass().toString() + " is not Array class!");
-        }
         List<T> list = new ArrayList<T>();
         boolean changed = false;
         for (T element : array) {
@@ -32,7 +28,7 @@ public class ArrayUtil {
             return array;
         } else {
             @SuppressWarnings({"unchecked"})
-            T[] newArray = (T[]) Array.newInstance(arrayClazz.getComponentType(), list.size());
+            T[] newArray = (T[]) Array.newInstance(array.getClass().getComponentType(), list.size());
             return list.isEmpty() ? newArray : list.toArray(newArray);
         }
     }

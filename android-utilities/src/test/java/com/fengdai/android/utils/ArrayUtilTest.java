@@ -14,7 +14,6 @@ public class ArrayUtilTest {
 
     @Test
     public void testRemoveNull() {
-        assertArray(null, null);
         assertArray(new String[]{"A", null, null, "D"}, new String[]{"A", "D"});
         assertArray(new String[]{null, null, null, null}, new String[0]);
         assertArray(new String[]{}, new String[0]);
