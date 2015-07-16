@@ -1,7 +1,5 @@
 package com.fengdai.android.widget;
 
-import com.fengdai.android.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.support.v4.view.ViewPager;
@@ -10,6 +8,8 @@ import android.util.AttributeSet;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+
+import com.fengdai.android.R;
 
 /**
  * PageIndicator for ViewPager.
@@ -32,7 +32,7 @@ public class PageIndicator extends LinearLayout {
 
         @Override
         public void onPageScrolled(int position, float positionOffset,
-                int positionOffsetPixels) {
+                                   int positionOffsetPixels) {
         }
 
         @Override

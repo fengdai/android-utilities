@@ -2,17 +2,17 @@
 <resources>
 
     <declare-styleable name="WrapLayout">
-        <attr name="horizontalSpacing" format="reference|dimension"/>
-        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="horizontalSpacing" format="reference|dimension" />
+        <attr name="verticalSpacing" format="dimension" />
     </declare-styleable>
 
     <declare-styleable name="ForegroundImageView">
-        <attr name="foreground" format="reference"/>
+        <attr name="foreground" format="reference" />
     </declare-styleable>
 
     <declare-styleable name="PageIndicator">
         <attr name="horizontalSpacing" />
-        <attr name="indicatorSelector" format="reference"/>
+        <attr name="indicatorSelector" format="reference" />
     </declare-styleable>
 
 </resources>

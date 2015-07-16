@@ -1,12 +1,12 @@
 package com.fengdai.android.widget;
 
-import com.fengdai.android.R;
-
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.fengdai.android.R;
 
 /**
  * Layout which can wrap it's child views.
